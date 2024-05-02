@@ -1,0 +1,335 @@
+/* Los comentarios los debemos hacer con */
+
+/*
+Existen tres maneras de aplicar un estilo
+1 En la linea
+2 En el <head>
+3 En un archivo externo (De tu proyecto o de otra fuente)
+
+***Estructura***
+p->etiqueta (selector)
+{
+    propiedad:vañor;
+    propiedad:vañor;
+    propiedad:vañor;
+    propiedad:vañor;
+}
+
+Tipos de selectores:
+1. Cualquier tag: p,h1, div, ...
+2. # los id
+3. . las clases
+
+Iconos de Google -> Tamaños recomendados -> 18px | 24px | 36px | 48px
+
+
+
+Se aplica a todo:
+
+
+*/
+
+
+
+* {
+    /*Primera regla que se aplica*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(../img/comida2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 5%;
+    /* background: color imagen repeat attacment position en ese orden
+    background: url(../img/comida2.jpg) no-repeat fixed right bottom;
+
+    */
+}
+
+/* Margenes CSS */
+.divMP p {
+    margin: 25px;
+    padding: 25px;
+}
+
+.divMP,
+.divMP p {
+    border: 1px solid blue;
+}
+
+
+.margen- {
+    margin-top: -150px!important;
+}
+
+.margen- img{
+    opacity: 0.5;
+}
+
+/* margin padind
+ej padding 25px 50px 70px
+25px superior
+50px izquierdo derecho
+70px inferior*/
+
+
+/* width y heigt
+ancho y alto de cualquier elemento*/
+/* Tomar en cuenta que si establecemos un width que el navegador puede que no lo puede mostrar, entonces tenemos que establecer un ancho maximo*/
+
+.imagenMx{
+    max-width: 50%;
+}
+
+
+
+
+
+.contenedor {
+    width: 100%;
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.contenedor .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: brown;
+    font-size: 48px !important;
+
+}
+
+.letraAzul {
+    color: blue;
+    font-size: 2rem;
+}
+
+/* Se puede aplicar que una clase se aplique a elementos especificos */
+.centrado {
+    text-align: center;
+    margin: auto;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+
+
+/* Agrupacion de reglas  ********IMPORTANTE*******
+h1,p,li{
+    font-size: 48px;
+}
+
+*/
+
+
+/* Los estilos aplicados en linea tienen prioridad a los internos y esternos */
+/* Existen los estilos de Agente (Estilos del navegador) */
+
+
+/* Colores */
+/* fuentes: color */
+/* fondo: background-color */
+/* Bordes se pueden aplicar a todas las etiquetas */
+/* border: width style color
+border-width: 3px;
+border-style: dotted; solid; dashed; double; ... 
+border-color:blue;
+*/
+.divBordes {
+    border-left: 10px ridge rgb(131, 123, 124);
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+
+
+    /* contorno dibuja una linea fuera del borde*/
+    outline:2px dotted blue ;
+}
+
+.divBordes p {
+    padding: 25px 0px;
+
+}
+
+
+.boton {
+    padding: 10px 25px;
+    background-color: gray;
+    border: 1px solid blue;
+    /* los bordes redondeados*/
+    border-radius: 0px 15px 0px 15px;
+
+}
+
+.divRedondo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid blue;
+    border-radius: 50%;
+    display: flex;
+    /*para usar flexbox */
+    justify-content: center;
+    /*para centrar horizontalmente */
+    align-items: center;
+    /* para centrar verticalmente */
+}
+
+.divRedondo a {
+    text-decoration: none;
+    line-height: 10px;
+    color: beige;
+    font-size: 10px;
+}
+
+.inputT {
+    border: none;
+    border-bottom: 2px solid blue;
+}
+
+.espacioTB {
+    padding: 25px 0;
+}
+
+
+/* Fondos -> background (color - image*/
+/*propiedades
+    repeat --- si el fondo es pequeño se repite en su contenedor
+*/
+
+.imagenR {
+    width: 20%;
+    height: 300px;
+    background-image: url(../img/comida2-removebg-preview.png);
+    background-repeat: repeat;
+    background-size: 5%;
+    background-color: rgba(100, 0, 0, 0.7);
+    display: flex;
+    /*para usar flexbox */
+    justify-content: center;
+    /*para centrar horizontalmente */
+    align-items: center;
+    /* para centrar verticalmente */
+    /* propiedd attachment: especifica si la imagen se queda fija o se desplaza con el scroll*/
+    background-attachment: fixed;
+    background-position: right top;
+}
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.imgH{
+    opacity: 0.4;
+}
+.imgH:hover{
+    opacity: 1;
+    width: 33.33%;
+}
+
+
+
+
+
+/*  plantilla-1 */
+.contenedorMenu{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+}
+
+.contenedorMenu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.contenedorH,.contenedorF{
+    background-color: darkgray;
+    height: 400px;
+}
+.contenedorH,.contenedorH2, .contenedorF,.contenedorHijos, .contenedorHijos div, .contenedorHijos2, .contenedorHijos2 div, .contenedorHijos3, .contenedorHijos3 div  { /* se aplicara a otros elementos*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorH{
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.contenedorH2{
+    height:100vh;
+    background-color: darkgray;
+}
+
+.contenedorF{
+    margin-top: 50px;
+}
+.contenedorHijos div{
+    height: 300px;
+    background-color: darkgray;
+    margin: 25px;
+    padding: 25px;
+
+}
+.contenedorHijos2 div{
+    height: 200px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenedorHijos3 p{
+    padding: 50px;
+    margin: auto;
+    
+}
+
+.contenedorHijos{
+    margin: 25px auto;
+}
+
+@media screen and (width<=768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+    .contenedorHijos{
+        flex-direction: column;
+    }
+}
